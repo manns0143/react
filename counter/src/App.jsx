@@ -15,16 +15,38 @@ function App() {
   //   console.log(count)
   // }
 
-  let [count, setCount] = useState(10)
+  const [count, setCount] = useState(10)
 
   function incValue() {
-    setCount(count = count + 1)
-    console.log(count)
+    setCount(count + 1)
+    // console.log(count)
   }
 
   function decValue() {
-    setCount(count = count - 1)
-    console.log(count)
+    setCount(count - 1)
+    // console.log(count)
+  }
+
+  function incValueBy5() {
+    // setCount(count + 1)
+    // setCount(count + 1)
+    // setCount(count + 1)
+    // setCount(count + 1)
+    // setCount(count + 1) this does not work
+
+    setCount(count => count + 1)
+    setCount(count => count + 1)
+    setCount(count => count + 1)
+    setCount(count => count + 1)
+    setCount(count => count + 1)
+  }
+
+  function decValueBy5() {
+    setCount(count => count - 1)
+    setCount(count => count - 1)
+    setCount(count => count - 1)
+    setCount(count => count - 1)
+    setCount(count => count - 1)
   }
 
   return (
@@ -32,6 +54,8 @@ function App() {
       <h1>Counter: {count}</h1>
       <button onClick={incValue}>Increase counter</button>
       <button onClick={decValue}>Decrease counter</button>
+      <button onClick={incValueBy5}>Increase counter by 5</button>
+      <button onClick={decValueBy5}>Decrease counter by 5</button>
     </>
   )
 }
