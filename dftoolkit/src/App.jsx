@@ -1,5 +1,5 @@
 import './App.css'
-import { Home, Landing, Login, Register, Tools, UploadEvidence, UploadResult } from './components/index.js'
+import { Disk, Home, Landing, Login, Register, Tools, UploadEvidence, UploadResult } from './components/index.js'
 
 function App() {
 
@@ -10,7 +10,8 @@ function App() {
     // <Home />
     // <UploadEvidence />
     // <UploadResult />
-    <Tools />
+    // <Tools />
+    <Disk />
   )
 }
 

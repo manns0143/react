@@ -53,7 +53,7 @@ export default function UploadEvidence() {
       <main className="flex-grow px-8 py-10">
         {/* Upload Button */}
         <div className="flex justify-center mb-10">
-          <button className="bg-black text-white px-50 py-10 text-2xl rounded-full hover:bg-gray-800 cursor-pointer transition-all">
+          <button className="bg-black text-white px-50 py-5 text-2xl rounded-full hover:bg-gray-800 cursor-pointer transition-all">
             Upload Evidence
           </button>
         </div>
@@ -66,7 +66,7 @@ export default function UploadEvidence() {
           {dummyEvidence.map((item, index) => (
             <div key={index} className="bg-white border border-gray-200 rounded-lg p-5 shadow hover:shadow-md transition text-left">
               <h3 className="text-lg font-semibold text-black mb-2">{item.fileName}</h3>
-              <p className="text-gray-700 mb-1">Tool Used: <span className="font-medium">{item.toolUsed}</span></p>
+              {/* <p className="text-gray-700 mb-1">Tool Used: <span className="font-medium">{item.toolUsed}</span></p> */}
               <p className="text-gray-600 mb-4">Uploaded on {item.date}</p>
               <button className="bg-black text-white px-4 py-2 rounded-full hover:bg-gray-800 cursor-pointer text-sm">
                 Download

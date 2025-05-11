@@ -30,7 +30,15 @@ export default function Tools() {
 
       {/* Main Content */}
       <main className="flex-grow px-8 py-10 flex flex-col">
-        <h2 className="text-2xl font-bold text-black mb-4">Explore Tool Categories</h2>
+        {/* <h2 className="text-2xl font-bold text-black mb-4">Explore Tool Categories</h2> */}
+
+        <div className="text-center">
+          <h2 className="text-3xl font-bold text-gray-900">Explore Tool Categories</h2>
+          <p className="mt-2 text-lg text-gray-600">Select a category to begin analysis</p>
+        </div>
+        <br />
+        <br />
+        <br />
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-12">
           {categories.map((category, index) => (
